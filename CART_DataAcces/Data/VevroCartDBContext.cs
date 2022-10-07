@@ -66,9 +66,19 @@ namespace CART_DataAcces.Data
             {
                 entity.ToTable("Cart_Orders");
 
+                entity.Property(e => e.Contact1).HasMaxLength(12);
+
+                entity.Property(e => e.Contact2).HasMaxLength(12);
+
                 entity.Property(e => e.Email).HasColumnName("email");
 
+                entity.Property(e => e.OrderStatus).HasMaxLength(50);
+
+                entity.Property(e => e.PaymentStatus).HasMaxLength(50);
+
                 entity.Property(e => e.TotalPrice).HasColumnType("decimal(18, 2)");
+
+                entity.Property(e => e.Zip).HasMaxLength(50);
 
                 entity.HasOne(d => d.Card)
                     .WithMany(p => p.CartOrders)

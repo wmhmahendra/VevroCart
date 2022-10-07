@@ -29,6 +29,7 @@ namespace CART_WebServices
             { options.JsonSerializerOptions.PropertyNameCaseInsensitive = false; });
 
             //services.AddScoped<IUserRepository, AdminServices>();
+            services.AddCors();
 
         }
 
@@ -47,7 +48,9 @@ namespace CART_WebServices
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(
+                 options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+             );
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

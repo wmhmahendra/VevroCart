@@ -29,5 +29,10 @@ namespace CART_APIServices
         {
             return new AdminService();
         }
+
+        public static Services.ICartService GetCartService()
+        {
+            return new CartService();
+        }
     }
 }

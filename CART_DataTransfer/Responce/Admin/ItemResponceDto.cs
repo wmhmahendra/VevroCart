@@ -9,7 +9,7 @@ namespace CART_DataTransfer.Responce.Admin
     public class ItemResponceDto
     {
         public int ItemId { get; set; }
-        public string Message { get; set; }
+        public string? Message { get; set; }
         public string? Name { get; set; }
         public decimal Price { get; set; }
         public decimal DiscountedPrice { get; set; }

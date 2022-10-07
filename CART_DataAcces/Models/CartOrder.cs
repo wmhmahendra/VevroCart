@@ -27,6 +27,8 @@ namespace CART_DataAcces.Models
         public string? Contact2 { get; set; }
         public string? Email { get; set; }
         public decimal TotalPrice { get; set; }
+        public string? OrderStatus { get; set; }
+        public string? PaymentStatus { get; set; }
 
         public virtual CartCreditCard? Card { get; set; }
         public virtual ICollection<CartOrderDetail> CartOrderDetails { get; set; }
