@@ -50,5 +50,29 @@ namespace CART_APIServices
 
             return UpdateStatus.Responce;
         }
+
+        public OrderListResponceDto GetOrderList(OrderRequestDto OrderRequest)
+        {
+            GetOrderListUOW GetOrders = new GetOrderListUOW()
+            {
+                Request = OrderRequest
+            };
+
+            GetOrders.DoWork();
+
+            return GetOrders.Responce;
+        }
+
+        public OrderItemListResponceDto GetOrderById(OrderRequestDto OrderRequest)
+        {
+            GetOrderByIdUOW GetOrders = new GetOrderByIdUOW()
+            {
+                Request = OrderRequest
+            };
+
+            GetOrders.DoWork();
+
+            return GetOrders.Responce;
+        }
     }
 }

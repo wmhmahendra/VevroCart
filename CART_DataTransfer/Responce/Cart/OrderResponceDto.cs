@@ -26,10 +26,9 @@ namespace CART_DataTransfer.Responce.Cart
         public string? Email { get; set; }
         public decimal TotalPrice { get; set; }
         public int OrderId { get; set; }
-        public int ItemId { get; set; }
-        public string? ItemName { get; set; }
-        public decimal ItemUnitPrice { get; set; }
-        public decimal Quantity { get; set; }
         public string? Message { get; set; }
+        public string? OrderStatus { get; set; }
+        public string? PaymentStatus { get; set; }
+        public IList<OrderDetailsResponceDto>? Item_List { get; set; }
     }
 }

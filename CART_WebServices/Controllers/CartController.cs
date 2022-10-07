@@ -61,5 +61,39 @@ namespace CART_WebServices.Controllers
                 return NoContent();
             }
         }
+
+        [HttpPost("GetOrdersList")]
+        public IActionResult GetOrderList(OrderRequestDto OrderRequest)
+        {
+            Services.ICartService cartService = ServiceFactory.GetCartService();
+
+            OrderListResponceDto Responce = cartService.GetOrderList(OrderRequest);
+
+            if (Responce != null)
+            {
+                return Ok(Responce);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        [HttpPost("GetOrderDetails")]
+        public IActionResult GetOrderById(OrderRequestDto OrderRequest)
+        {
+            Services.ICartService cartService = ServiceFactory.GetCartService();
+
+            OrderItemListResponceDto Responce = cartService.GetOrderById(OrderRequest);
+
+            if (Responce != null)
+            {
+                return Ok(Responce);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
     }
 }

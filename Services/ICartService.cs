@@ -20,5 +20,11 @@ namespace Services
 
         [OperationContract]
         OrderResponceDto UpdateOrderStatus(OrderRequestDto CartRequest);
+
+        [OperationContract]
+        OrderListResponceDto GetOrderList(OrderRequestDto OrderRequest);
+
+        [OperationContract]
+        OrderItemListResponceDto GetOrderById(OrderRequestDto OrderRequest);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CART_DataTransfer.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CART_DataTransfer.Request.Cart
 {
-    public class OrderRequestDto
+    public class OrderRequestDto : Pagination
     {
         public int UserId { get; set; }
         public DateTime OrderDate { get; set; }
@@ -28,7 +29,7 @@ namespace CART_DataTransfer.Request.Cart
         public string? OrderStatus { get; set; }
         public string? PaymentStatus { get; set; }
 
-        public IList<OrderDetailsRequestDto> OrderDetailsRequest { get; set; }
+        public IList<OrderDetailsRequestDto>? OrderDetailsRequest { get; set; }
 
     }
 }
