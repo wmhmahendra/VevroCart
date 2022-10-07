@@ -1,0 +1,14 @@
+E:\Int\CART_WebServices\CART_DataAcces\bin\Debug\net6.0\CART_DataAcces.deps.json
+E:\Int\CART_WebServices\CART_DataAcces\bin\Debug\net6.0\CART_DataAcces.runtimeconfig.json
+E:\Int\CART_WebServices\CART_DataAcces\bin\Debug\net6.0\CART_DataAcces.dll
+E:\Int\CART_WebServices\CART_DataAcces\bin\Debug\net6.0\CART_DataAcces.pdb
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.csproj.AssemblyReference.cache
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.GeneratedMSBuildEditorConfig.editorconfig
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.AssemblyInfoInputs.cache
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.AssemblyInfo.cs
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.csproj.CoreCompileInputs.cache
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.dll
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\refint\CART_DataAcces.dll
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.pdb
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\CART_DataAcces.genruntimeconfig.cache
+E:\Int\CART_WebServices\CART_DataAcces\obj\Debug\net6.0\ref\CART_DataAcces.dll
